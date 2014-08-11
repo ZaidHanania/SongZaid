@@ -1,0 +1,71 @@
+doctype html
+html(lang="en")
+  head
+    title SingZaid
+    meta(charset='UTF-8')
+    meta(content='', name='description')
+    meta(content='', name='author')
+    meta(content='3 days', name='revisit-after')
+    link(href='main.css', rel='stylesheet')
+    link(rel="stylesheet", href="scripts/ionrangeslider/css/ion.rangeSlider.css") 
+    link(rel="stylesheet", href="scripts/ionrangeslider/css/ion.rangeSlider.skinFlat.css")
+    link(rel="stylesheet", href="scripts/ionrangeslider/img/sprite-skin-flat.png")
+    link(href='http://fonts.googleapis.com/css?family=Raleway:300,400,200' ,rel='stylesheet' type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css')
+
+  body
+
+
+    nav.top
+        .profile
+            ul
+                li
+                    img.pic(src="", alt="")
+                li
+                    p.name Zaid Hanania
+                li
+                    p.logout logout
+
+        img.navLogo(src="images/logo.png", alt="")
+
+        <svg class="playlist" height="12px" version="1.1" viewBox="0 0 22 12" width="22px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs><path d="M0.500836134,0 C0.224231975,0 0,0.214035034 0,0.504684448 L0,1.49531555 C0,1.77404508 0.217741728,2 0.500836134,2 L21.4991639,2 C21.775768,2 22,1.78596497 22,1.49531555 L22,0.504684448 C22,0.225954924 21.7822583,0 21.4991639,0 L0.500836134,0 Z M0.500836134,5 C0.224231975,5 0,5.21403503 0,5.50468445 L0,6.49531555 C0,6.77404508 0.217741728,7 0.500836134,7 L21.4991639,7 C21.775768,7 22,6.78596497 22,6.49531555 L22,5.50468445 C22,5.22595492 21.7822583,5 21.4991639,5 L0.500836134,5 Z M0.500836134,10 C0.224231975,10 0,10.214035 0,10.5046844 L0,11.4953156 C0,11.7740451 0.217741728,12 0.500836134,12 L21.4991639,12 C21.775768,12 22,11.785965 22,11.4953156 L22,10.5046844 C22,10.2259549 21.7822583,10 21.4991639,10 L0.500836134,10 Z" id="path-1"/></defs><g  fill-rule="evenodd" id="miu" stroke="none" stroke-width="1"><g id="editor_list_view_hambuger_menu_glyph"><use fill-rule="evenodd" xlink:href="#path-1"/><use fill="none" xlink:href="#path-1"/></g></g></svg>
+
+
+    .bg
+
+        //- .sph
+        .wrapper
+            .login
+                img.logo(src="images/logo.png", alt="")
+                h1 Login with:
+                img.twitter(src="images/twitter.png", alt="")
+            .create
+                form
+                    h3 Name your playlist:
+                    input.playlistName(type="text")
+                    h3 Energy:
+                    input#energy(type="text")
+                    h3 Danceability:
+                    input#dance(type="text")
+                    input.submit(type="submit", value="Create Playlist")
+                    p.pre Or click here to load a previous playlist!
+
+
+            .rel
+                h3.track
+                h3.artist
+                #player
+                button.button.like Add to Playlist
+                button.button.dislike Play Next
+                button.button.next Skip Song
+
+                nav.right
+                    h3 My Playlists:
+                    ul
+            
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+    script(src='scripts/main.js')
+    script(src='scripts/ionrangeslider/js/ion.rangeSlider.js')
+    script(src="https://cdn.firebase.com/js/client/1.0.19/firebase.js")
+    script(src="https://cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js")
